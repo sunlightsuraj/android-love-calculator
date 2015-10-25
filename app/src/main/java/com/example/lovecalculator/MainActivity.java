@@ -83,26 +83,33 @@ public class MainActivity extends Activity {
 					}
 					ss = "";
 					r = (int) (Math.random() * 10);
+
 					if (r != 0)
 						s += r;
 					else
 						s -= 5;
-					if (s > 100) {
-						i = s % 100;
-						s -= i * 2;
-					}
+
 					if (s <= 90)
 						s += 9;
 					else if (s <= 95)
 						s += 4;
+
+					if (s > 100) {
+						i = s % 100;
+						s -= i * 2;
+					}
+
 					if (s < 5 && s > 0) {
 						s += 10;
 					}
+
 					if (s <= 0) {
 						s = r * 2;
 					}
+
 					st = String.valueOf(s);
-					result.setText(s1+"+"+s2+"="+st);
+                    String value = s1 + "+" + s2 + "=" + st;
+					result.setText(value);
 					/*Toast.makeText(getApplicationContext(), st,
 							Toast.LENGTH_LONG).show();*/
 				} else {
