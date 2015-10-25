@@ -1,5 +1,5 @@
-.gradle
-.idea
-local.properties
-LoveCalculator.iml
-app/build/intermediates
+/.idea
+/.gradle
+/LoveCalculator.iml
+/local.properties
+/app/build/intermediates
